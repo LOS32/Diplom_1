@@ -12,5 +12,5 @@ class TestBun:
     ])
     def test_bun_initialization(self, name, price):
         bun = Bun(name, price)
-        assert bun.get_name() == name, f"Имя булочки должно быть {name}"
-        assert bun.get_price() == price, f"Цена булочки должна быть {price}"
+        assert bun.get_name() == name and bun.get_price() == price
+
